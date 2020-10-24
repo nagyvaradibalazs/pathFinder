@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="icon" href="icon.png">
+	<title>Path Finder</title>
+</head>
+<body>
+	<div class="title">
+		<h1>Path Finder</h1>
+		<p>Generate a maze, select the starting and ending points by clicking on the maze, the algorithm to use to find the path, then click Go!</p>
+	</div>
+	<div class="content">
+		<div class="left-side">
+			<div class="algorithm-selector">
+				<a class="algorithm-button" id="bfs" onclick="changeAlgorithmType('bfs')">Breadth-first Search
+					<div class="details-text">
+						Guarantees the shortest path
+					</div>
+				</a>
+				<a class="algorithm-button" id="dfs" onclick="changeAlgorithmType('dfs')">Depth-first Search
+					<div class="details-text">
+						Does NOT guarantee the shortest path
+					</div>
+				</a>
+				<a class="algorithm-button" id="aStar" onclick="changeAlgorithmType('aStar')">A* Search
+					<div class="details-text">
+						Guarantees the shortest path
+					</div>
+				</a>
+				<a class="algorithm-button" id="dijkstra" onclick="changeAlgorithmType('dijkstra')">Dijkstra's Algorithm
+					<div class="details-text">
+						Guarantees the shortest path
+					</div>
+				<div class="algorithm-selector-bubble"></div>
+			</div>
+			<div class="main-buttons">
+				<a class="new-grid-button" onclick="newMaze()">New Maze</a>
+				<a class="go-button" onclick="runGo()">Go</a>
+			</div>
+		</div>
+		<div class="container">
+			<!-- array elements by JS -->
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: black;
+	background: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.title p {
+	margin-top: 10px;
+	position: absolute;
+	text-align: left;
+	left: calc(50% - 250px);
+	font-size: 14px;
+	width: 500px;
+}
+
+.content {
+	display: flex;
+	margin-top: 100px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 800px;
+	height: 480px;
+	margin-left: 50px;
+	display: grid;
+	grid-template-columns: repeat(39, 0fr);
+	grid-template-rows: repeat(23, 0fr);
+}
+
+.left-side {
+	width: 400px;
+	height: 300px;
+}
+
+.algorithm-selector {	
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 150px 150px;
+	justify-content: center;
+	align-items: center;
+}
+
+.algorithm-button {
+	cursor: pointer;
+	text-align: center;
+}
+
+.details-text {
+	font-size: 10px;
+}
+
+.main-buttons {
+	margin: 60px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.new-grid-button {
+	cursor: pointer;
+	margin-right: 50px;
+	background: tomato;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.go-button {
+	cursor: pointer;
+	margin-left: 30px;
+	background: tomato;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.algorithm-selector-bubble {
+	position: absolute;
+	z-index: -1;
+	background: tomato;
+	transform: scale(1.2);
+	transition: all 0.5s ease;
+	border-radius: 10px;
+}
+
+.grid-cell {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.05s ease;
+}
